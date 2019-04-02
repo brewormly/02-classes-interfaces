@@ -1,6 +1,7 @@
 package ohm.softa.a02.tests;
 
 import ohm.softa.a02.SimpleFilter;
+import ohm.softa.a02.SimpleList;
 import ohm.softa.a02.SimpleListImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -63,6 +64,29 @@ public class SimpleListTest {
 		for(Object o : result){
 			int i = (int)o;
 			assertTrue(i % 2 == 0);
+		}
+	}
+
+	@Test
+	void testFilterAnonymousClassTwo(){
+		SimpleListImpl result = (SimpleListImpl) testList.filter(new SimpleFilter() {
+			@Override
+			public boolean include(Object item) {
+				return (int)item % 3 == 0;
+			}
+		});
+		for(Object o : result){
+			int i = (int)o;
+			assertTrue(i % 3 == 0);
+		}
+	}
+
+	@Test
+	void testFilterLambdaTwo(){
+		SimpleListImpl result = (SimpleListImpl) testList.filter(item -> (int)item % 3 == 0);
+		for(Object o : result){
+			int i = (int)o;
+			assertTrue(i % 3 == 0);
 		}
 	}
 }

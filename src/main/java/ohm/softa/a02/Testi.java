@@ -1,11 +1,11 @@
 package ohm.softa.a02;
 
-public class Test {
-    public Test(){
+public class Testi {
+    public Testi(){
 
     }
-    int i;
-    class Inner{
+    public int i;
+    protected class Inner{
 
     }
 }

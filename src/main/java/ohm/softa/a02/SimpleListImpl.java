@@ -14,6 +14,7 @@ public class SimpleListImpl implements SimpleList, Iterable<Object> {
     public SimpleListImpl() {
         this.head = null;
         this.size = 0;
+        new Testi().new Inner();
     }
 
     private static class Element {
@@ -52,6 +53,10 @@ public class SimpleListImpl implements SimpleList, Iterable<Object> {
             return false;
         }
 
+        /**
+         * Immer wenn next geht er auch eins weiter
+         * @return
+         */
         @Override
         public Object next() {
             Object tmp = current.getItem();

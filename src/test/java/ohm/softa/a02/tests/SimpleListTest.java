@@ -3,6 +3,7 @@ package ohm.softa.a02.tests;
 import ohm.softa.a02.SimpleFilter;
 import ohm.softa.a02.SimpleList;
 import ohm.softa.a02.SimpleListImpl;
+import ohm.softa.a02.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,6 +20,7 @@ public class SimpleListTest {
 
 	@BeforeEach
 	void setup(){
+		Test adsf = new Test();
 		testList = new SimpleListImpl();
 
 		testList.add(1);

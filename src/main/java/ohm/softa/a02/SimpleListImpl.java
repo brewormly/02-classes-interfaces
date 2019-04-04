@@ -90,7 +90,7 @@ public class SimpleListImpl implements SimpleList, Iterable<Object> {
         SimpleListImpl tmp = new SimpleListImpl();
 
         Element current = this.head;
-        while (current.getNext() != null) {
+        while (current != null) {
             if(filter.include(current.getItem())){
                 tmp.add(current.getItem());
             }

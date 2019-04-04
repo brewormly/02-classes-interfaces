@@ -28,6 +28,6 @@
 3. Add some test methods and implement another filter logic (_e.g._ every third number, or any number smaller than a certain value).
 5. Review anonymous classes and lambdas.
 	- Lambda expressions look very convenient; can you think of a scenario where they should not be used?
-    - wenn es schlicht zu komplex wird, so dass man nicht mehr auf anhieb erkennt was der Ausdruck macht
+    - man kann nur auf ein element prüfen, immer dann wenn man einen anderen kontext braucht oder wenn man sich etwas merken muss geht es nicht mehr, immer dann wenn ich einen Zustand brauche; wenn es schlicht zu komplex wird, so dass man nicht mehr auf anhieb erkennt was der Ausdruck macht
 	- Recall how scoping works for anonymous (inner or local) classes; can you think of a scenario where to avoid them? 
     - auf protected kann zugegriffen werden :/
